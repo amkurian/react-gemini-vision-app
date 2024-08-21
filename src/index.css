@@ -1,0 +1,117 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.app {
+  max-width: 600px;
+  width: 100%;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+/* Search Section */
+.search-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Image Container */
+.image-container {
+  margin: 20px 0;
+  position: relative;
+}
+
+.image-container img {
+  width: 30vw; /* Set image width to 30% of the viewport width */
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Extra Info */
+.extra-info {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #555;
+}
+
+.extra-info span {
+  font-weight: bold;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.extra-info span:hover {
+  text-decoration: underline;
+}
+
+/* Input Field */
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+input[type="text"], button {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+
+input[type="text"] {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 0 5px;
+  border: none;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Error and Response Messages */
+p {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+p.error {
+  color: #ff0000;
+}
+
+p.response {
+  color: #28a745;
+}
+
+/* Clear Button */
+button.clear {
+  background-color: #dc3545;
+}
+
+button.clear:hover {
+  background-color: #c82333;
+}
